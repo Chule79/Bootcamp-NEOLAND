@@ -17,7 +17,7 @@
 
         console.log(z);
 
-
+//--------------------------------------------------------------------------------------------------------------------
 
 // Iteración #2: Variables avanzadas
     //1.1 Dado el siguiente javascript, cambia el valor de la propiedad age a 25.
@@ -52,7 +52,7 @@
         console.log(car1);
         console.log(car2);
 
-
+//--------------------------------------------------------------------------------------------------------------------
 
 //Iteración #3: Operadores
     //1.1 Multiplica 10 por 5 y muestra el resultado mediante console.
@@ -65,10 +65,51 @@
     //teniendo dos variables p = 10 y j = 5.
         let p = 10;
         let j = 5;
+
         console.log(p+j);
     //1.5 Usa el correcto operador de asignación que resultará en i = 50,
     //teniendo dos variables c = 10 y m = 5.
         let c = 10;
         let m = 5;
+
         console.log(c*m);
+
+//--------------------------------------------------------------------------------------------------------------------
+ 
+//Iteración #4: Arrays
+    //1.1 Consigue el valor "HULK" del array de avengers y muestralo por consola.
+        const avengers1 = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
+
+        console.log(avengers1[0]);
+    //1.2 Cambia el primer elemento de avengers a "IRONMAN"
+        const avengers2 = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
+        avengers2[0] = "IRONMAN"; 
+
+        console.log(avengers2);
+    //1.3 console numero de elementos en el array usando la propiedad correcta de Array.
+        const avengers3 = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
+
+        console.log(avengers3.length);
+    //1.4 Añade 2 elementos al array: "Morty" y "Summer". 
+    //Muestra en consola el último personaje del array
+        const rickAndMortyCharacters1 = ["Rick", "Beth", "Jerry"];
+
+        console.log(rickAndMortyCharacters1.at(-1));
+    //1.5 Elimina el último elemento del array y muestra el primero y el último por consola.
+        const rickAndMortyCharacters2 = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
+        rickAndMortyCharacters2.pop();
+
+        console.log(rickAndMortyCharacters2);
+
+    //1.6 Elimina el segundo elemento del array y muestra el array por consola.
+        const rickAndMortyCharacters3 = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
+        rickAndMortyCharacters3.splice(1, 1);
+
+        console.log(rickAndMortyCharacters3);
+
+//--------------------------------------------------------------------------------------------------------------------
+
+
+
+
 
