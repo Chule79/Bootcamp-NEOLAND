@@ -71,3 +71,4 @@
         let c = 10;
         let m = 5;
         console.log(c*m);
+
