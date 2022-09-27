@@ -28,7 +28,14 @@
 //Iteración #3: Calcular la suma
 
     const numbers = [1, 2, 3, 5, 45, 37, 58];
-
+    let acumulado = 0
     function sumAll(param) {
-    
+        for (i = 0; i < param.length; i++){
+            acumulado += param[i];
+        }
+        console.log(acumulado)
     }
+
+    sumAll(numbers);
+
+//--------------------------------------------------------------------------------------
