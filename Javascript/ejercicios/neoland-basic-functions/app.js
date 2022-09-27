@@ -73,3 +73,28 @@
     }
 
     averageWord(mixedElements);
+
+//-------------------------------------------------------------------------------------------
+
+//Iteración #6: Valores únicos
+    //NO ME SALE
+    const duplicates = [
+        'sushi',
+        'pizza',
+        'burger',
+        'potatoe',
+        'pasta',
+        'ice-cream',
+        'pizza',
+        'chicken',
+        'onion rings',
+        'pasta',
+        'soda'
+    ];
+
+    function removeDuplicates(param) {
+        for (i = 0; i < param.length; i++){
+          
+        }
+    }
+    removeDuplicates(duplicates)
