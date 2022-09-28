@@ -98,3 +98,62 @@
         }
     }
     removeDuplicates(duplicates)
+
+//------------------------------------------------------------------------------------------------
+
+//Iteración #7: Buscador de nombres
+    const nameFinder = [
+        'Peter',
+        'Steve',
+        'Tony',
+        'Natasha',
+        'Clint',
+        'Logan',
+        'Xabier',
+        'Bruce',
+        'Peggy',
+        'Jessica',
+        'Marc'
+    ];
+    
+    function finderName(param, buscar) {
+       let esta = nameFinder.includes(buscar);
+       let posicion = nameFinder.indexOf(buscar);
+
+       if (esta) {
+        return `True ${posicion}`
+       } else{
+        return `False`
+       }
+    }
+
+console.log(finderName(nameFinder, "Tony"));
+
+//-------------------------------------------------------------------------------------------------
+
+//Iteration #8: Contador de repeticiones
+    const counterWords = [
+        'code',
+        'repeat',
+        'eat',
+        'sleep',
+        'code',
+        'enjoy',
+        'sleep',
+        'code',
+        'enjoy',
+        'upgrade',
+        'code'
+    ];
+
+    const cuentas = []
+    function repeatCounter(param) {
+        for (const word of param) {
+            cuentas[word] = cuentas[word] + 1 || 1 
+        }
+        console.log(cuentas)
+    }
+
+    repeatCounter(counterWords)
+
+ 
