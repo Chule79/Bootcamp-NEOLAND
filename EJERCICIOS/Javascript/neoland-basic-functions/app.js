@@ -93,9 +93,12 @@
     ];
 
     function removeDuplicates(param) {
+    const arrayDuplicados = []
+
         for (i = 0; i < param.length; i++){
-          
+          if(!arrayDuplicados.includes(param[i])){arrayDuplicados.push(param[i])}
         }
+        console.log(arrayDuplicados);
     }
     removeDuplicates(duplicates)
 
@@ -117,8 +120,8 @@
     ];
     
     function finderName(param, buscar) {
-       let esta = nameFinder.includes(buscar);
-       let posicion = nameFinder.indexOf(buscar);
+       let esta = param.includes(buscar);
+       let posicion = param.indexOf(buscar);
 
        if (esta) {
         return `True ${posicion}`
