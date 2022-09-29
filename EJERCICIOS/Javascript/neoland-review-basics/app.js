@@ -104,7 +104,7 @@ console.log(categorias);
 
 //**Iteración #4: Métodos findArrayIndex**
 
-    function findArrayIndex(array, text) {
+    const findArrayIndex = (array, text) => {
         for (let i = 0; i < array.length; i++) {
             if(array[i] === (text)){
                  console.log(`Esta es la posicion en el Array ${i}`);
@@ -115,3 +115,12 @@ console.log(categorias);
     findArrayIndex(['Caracol', 'Mosquito', 'Salamandra', 'Ajolote'],'Ajolote' )
 
 //--------------------------------------------------------------------------------------------------------------
+
+//Iteración #5: Función rollDice
+
+    const rollDice = (caras) => {
+        return Math.floor(Math.random() * caras)
+    }
+    console.log(rollDice(9))
+   
+//---------------------------------------------------------------------------------------------------------------
