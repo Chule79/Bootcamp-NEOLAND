@@ -19,7 +19,7 @@ console.log(categorias);
 //---------------------------------------------------------------------------------------------------------
 
 //Iteración #2: Mix Fors
-//NO SALE
+
     const users = [
         {name: 'Manolo el del bombo',
             favoritesSounds: {
@@ -50,8 +50,20 @@ console.log(categorias);
             }
         },
     ]
+    const favoriteSound = []
+    let media = 0
+    for (const user of users) {
+        const {name, favoritesSounds} = user
+        for (const sonido in user.favoritesSounds) {
+            favoriteSound.push(user.favoritesSounds[sonido].volume)     
+        }
+    }
+    for (let i = 0; i < favoriteSound.length; i++) {
+        media += favoriteSound[i] / favoriteSound.length
+        
+    }
+ console.log(`la media es ${media}`)
 
-  
 
 //---------------------------------------------------------------------------------------
 
@@ -124,3 +136,32 @@ console.log(categorias);
     console.log(rollDice(9))
    
 //---------------------------------------------------------------------------------------------------------------
+
+//Iteración #6: Función swap
+
+    
+    let guardar = ""
+    let posicion = 0
+    let guardar2 = ""
+    let posicion2 = 0
+    const swap = (array2, par1, par2) => {
+        for (let i = 0; i < array2.length; i++) {
+            if (par1 == [i]) {
+                guardar = array2[i]
+                posicion = [i]   
+            }
+            for (let i = 0; i < array2.length; i++) {
+                if (par2 == [i]) {
+                    guardar2 = array2[i]
+                    posicion2 = [i]   
+                }  
+            }
+        }
+        array2.splice(par1, par1, guardar); 
+        console.log(array2);
+    }
+   
+    
+    console.log( swap(['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño'], 0, 3)); 
+  
+   // array2.splice(par1, par1, guardar);
