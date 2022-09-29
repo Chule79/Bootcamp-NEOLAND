@@ -101,3 +101,17 @@ console.log(categorias);
      console.log(conteo);
 
 //-------------------------------------------------------------------------------------------------------------
+
+//**Iteración #4: Métodos findArrayIndex**
+
+    function findArrayIndex(array, text) {
+        for (let i = 0; i < array.length; i++) {
+            if(array[i] === (text)){
+                 console.log(`Esta es la posicion en el Array ${i}`);
+            } 
+            
+        }
+    }
+    findArrayIndex(['Caracol', 'Mosquito', 'Salamandra', 'Ajolote'],'Ajolote' )
+
+//--------------------------------------------------------------------------------------------------------------
