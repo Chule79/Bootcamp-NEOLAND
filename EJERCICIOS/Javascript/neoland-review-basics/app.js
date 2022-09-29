@@ -140,7 +140,7 @@ console.log(categorias);
 //Iteración #6: Función swap
 
     
-    let guardar = ""
+ /*   let guardar = ""
     let posicion = 0
     let guardar2 = ""
     let posicion2 = 0
@@ -162,6 +162,6 @@ console.log(categorias);
     }
    
     
-    console.log( swap(['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño'], 0, 3)); 
+    console.log( swap(['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño'], 0, 3));
   
-   // array2.splice(par1, par1, guardar);
+   // array2.splice(par1, par1, guardar);*/
