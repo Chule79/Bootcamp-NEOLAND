@@ -1,12 +1,16 @@
+let user = false;
 
 function isLogged(user) {
-    if (user) {
-        console.log("Bienvenido " + user );
-    } if (typeof user !== "string") {
-        console.log("Debes de tener un nombre")
-    }else {
-        console.log("Debes iniciar sesion");
-    }
+  if (typeof user !== "string") {
+    console.log("Debes tener un nombre");
+  } else if (user) {
+    console.log("Bienvenido " + user);
+  } else {
+    console.log("Debes iniciar sesión");
+  }
 }
 
-isLogged("Pepe")
+isLogged("Pepe");
+isLogged(1);
+isLogged();
+
