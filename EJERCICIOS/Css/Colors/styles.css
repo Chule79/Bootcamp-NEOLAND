@@ -1,0 +1,12 @@
+h1{
+    color: #C92A2B
+  }
+  h2{
+    color: #A61F4D;
+  }
+  .first, .second{
+    color: #364FC7
+  }
+  .second{
+    border-bottom: 2px solid #C92A2B;
+  }
