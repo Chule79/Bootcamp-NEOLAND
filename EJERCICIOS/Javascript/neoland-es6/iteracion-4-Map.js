@@ -39,3 +39,16 @@ const cities = [
 	{isVisited:true, name: 'Amsterdam'}, 
 	{isVisited:false, name: 'Seul'}
 ];
+
+let visitados = []
+
+
+const iteracion4 = (array) =>{
+	for (const lugar of array) {
+		if (lugar.isVisited === true) {
+			visitados.push(`${lugar.name} visitado`)
+		}
+	}
+}
+iteracion4(cities)
+console.log(visitados);
