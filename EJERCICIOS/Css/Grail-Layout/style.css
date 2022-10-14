@@ -1,0 +1,61 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-gap: 15px;
+  grid-template-rows: 1fr 1fr 1fr 1fr ;
+  grid-template-areas: 
+  "my-header my-header"
+  "my-sidebar my-nav"
+  "my-sidebar my-article"
+  "my-footer my-footer"
+}
+
+.container div {
+  padding: 15px;
+  font-size: 32px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+  border-radius: 15px;
+}
+
+.header {
+  grid-area: my-header;
+  background-color: #FFDE22;
+}
+
+.sidebar {
+  grid-area: my-sidebar;
+  background-color: #FF7755;
+}
+
+.nav {
+  grid-area: my-nav;
+  background-color: #00DDFF;
+}
+
+.article {
+  grid-area: my-article;
+  background-color: #bccbde;
+}
+
+.article p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.footer {
+  background-color: #393f4d;
+  grid-area: my-footer;
+}
